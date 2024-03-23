@@ -1,0 +1,34 @@
+---
+const PROJECTS = [
+  {
+    title: "Twitter Clone",
+    description: `I developed a Twitter clone using a modern tech stack, 
+    including React for building the user interface, Redux for managing 
+    application state, Firebase for real-time database and authentication 
+    functionalities, and Material-UI for sleek and responsive design elements.`,
+    image: "/public/twiterClone.png",
+    link: "https://github.com/JhonMG07/twitter-clone?tab=readme-ov-file",
+  },
+];
+---
+
+{
+  PROJECTS.map((project) => (
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mt-2 text-yellow-200 mb-3">
+        {project.title}
+      </h3>
+      <p class="mb-6 text-base font-normal text-gray-200 text-pretty">
+        {project.description}
+        <a href={project.link} class="text-yellow-200 hover:text-red-200/90">
+          View on GitHub
+        </a>
+      </p>
+      <img
+        src={project.image}
+        alt={project.title}
+        class="rounded shadow-2xl shadow-white/10 w-full lg:w-[700px] "
+      />
+    </div>
+  ))
+}

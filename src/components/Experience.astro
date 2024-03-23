@@ -1,0 +1,64 @@
+---
+import ExperienceIteam from "./ExperienceIteam.astro";
+
+const EXPERIENCE = [
+  {
+    date: "December 2023 - Until now",
+    title: "Software Engineer at IOET Inc. - PeopleApp",
+    description: `This is my second project within the company, 
+      where I'm accustomed to teamwork and have gained experience in design patterns and architectures. 
+      Recently, I've delved deeper into hexagonal architecture and GragphQL, in addition to improving my 
+      front-end knowledge using astro and tailwind. I also have proficient English skills, as it's been a 
+      constant requirement in my communication within the company. Furthermore, I have experience in CI/CD 
+      implementation. `,
+    link: "https://www.ioet.com/",
+  },
+  {
+    date: "March 2023 - December 2023",
+    title: "Trainee Developer at IOET Inc. - SnackApp",
+    description: `As a programmer, I'm responsible for the backend of the application, developed in 
+      Python with FastAPI, following a layered architecture. Additionally, I serve as the Tech Lead 
+      Junior in the frontend, utilizing React with TypeScript and Material UI. I possess a strong 
+      understanding of SOLID principles and have experience with SCRUM, emphasizing clean and 
+      maintainable code. `,
+    link: "https://www.linkedin.com/company/ioet/mycompany/",
+  },
+  {
+    date: "July 2023 - Until now",
+    title: "EPN Software Club President",
+    description: `I lead the organization of technical visits 
+    to software development companies in Quito, providing our members with valuable hands-on experience and the 
+    opportunity to learn about the latest technological trends. Additionally, I manage and coordinate talks, classes, 
+    and presentations related to programming, collaborating closely with industry experts and university professors 
+    to deliver enriching educational events. I also have the privilege of teaching classes and giving presentations 
+    on various programming topics, sharing my knowledge and experience with club members to prepare them for success 
+    in the technology field. `,
+    link: "https://www.instagram.com/club.software.epn/?hl=es",
+  },
+  {
+    date: "December 2022 - March 2023",
+    title: "Software Developer at AlojaU EC",
+    description: `I spearheaded the full development of the AjolaU website, overseeing both backend and frontend aspects.
+     Leveraging various frameworks and technologies like Tailwind and Next.js, I ensured seamless integration and optimal 
+     performance throughout the development process.`,
+  },
+  {
+    date: "January 2023 - March 2023",
+    title: "Software Developer at National Polytechnic School",
+    description: `
+      As a member of the team, I played a key role in developing a new web application for task management at the university, 
+      where I contributed to leveraging JavaScript, Node.js, MongoDB, and Express (express.js). This endeavor involved 
+      seamlessly integrating these technologies to create a robust and efficient solution tailored specifically for our needs.`,
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3 md:max-w-[700px]">
+  {
+    EXPERIENCE.map((item) => (
+      <li class="mb-10 ms-4">
+        <ExperienceIteam {...item} />
+      </li>
+    ))
+  }
+</ol>
